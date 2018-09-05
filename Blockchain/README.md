@@ -6,7 +6,7 @@ contract owner. If not, it should raise an exception.
 * Has a getter for the counter
 * Has overflow protection (don't hardcode anything related to the type
 please)
-# Homework (2/2) ❌
+# Homework (2/2) ✅
 * Create a DDNS contract (Decentralized Domain Name System),
 that:
 * Has a method to buy a domain name (string type). The price is 1 ETH. A
