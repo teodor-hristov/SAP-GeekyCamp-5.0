@@ -1,0 +1,10 @@
+#!/bin/bash
+PARAM1=tedo
+PARAM2=tedo
+PARAM3=tedo
+PARAM4=tedo
+PARAM5=tedo
+PARAM6=tedo
+PARAM7=tedo
+PARAM8=tedo
+PARAM9=tedo
