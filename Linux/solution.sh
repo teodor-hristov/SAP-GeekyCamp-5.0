@@ -1,18 +1,21 @@
 #!/bin/bash
 PARAMETERS=$1;
 
-cat $PARAMETERS | sed -r "s/(.*)=(.*)/\1/g" > /tmp/vars_names;
-cat $PARAMETERS | sed -r "s/(.*)=(.*)/echo $\1/g" > /tmp/vars;
-cp text.txt /tmp/text.txt;
+cat $PARAMETERS | sed -r "s/(.*)=(.*)/\1/g" > ./bin/parameter_name;
+cat $PARAMETERS | sed -r "s/(.*)=(.*)/echo $\1/g" > ./bin/parameters;
+cp text.txt ./bin/replaced.txt;
 
-cat $PARAMETERS /tmp/vars | bash > /tmp/vars_values;
+cat $PARAMETERS ./bin/parameters | bash > ./bin/parameter_value;
 
 index=1;
-for var in `cat /tmp/vars_names`;
+#===============================THIS IS WORKING в)=======================================
+for var in `cat ./bin/parameter_name`;
 do
-    sed -i -r "s/@$var@/`head -$index /tmp/vars_values | tail -1`/g" /tmp/text.txt;
+    sed -i -r "s/@$var@/`head -$index ./bin/parameter_value | tail -1`/g" ./bin/replaced.txt;
     index=$(($index+1));
 done
+#========================================================================================
 
-cat /tmp/text.txt;
+
+cat ./bin/replaced.txt;
 #cat /tmp/vars_names;

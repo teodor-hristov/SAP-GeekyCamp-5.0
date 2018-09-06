@@ -1,0 +1,10 @@
+#!/bin/bash
+echo $PARAM1
+echo $PARAM2
+echo $PARAM3
+echo $PARAM4
+echo $PARAM5
+echo $PARAM6
+echo $PARAM7
+echo $PARAM8
+echo $PARAM9
