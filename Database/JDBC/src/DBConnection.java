@@ -76,10 +76,7 @@ public class DBConnection {
             Statement st = conn.createStatement();
             st.executeUpdate(sql);
             st.close();
-            st = null;
-
-
-
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
