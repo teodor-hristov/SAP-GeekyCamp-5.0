@@ -10,7 +10,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 public class SpeechGame extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,6 +20,7 @@ public class SpeechGame extends AppCompatActivity implements View.OnClickListene
     boolean isInitialised;
 
     TextView tvSpeech;
+    TextView yesOrNo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +28,11 @@ public class SpeechGame extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_speech_game);
 
         tvSpeech = findViewById(R.id.tvSpeech);
+        yesOrNo = findViewById(R.id.yesOrNoProperty);
 
         findViewById(R.id.bSpeak).setOnClickListener(this);
         findViewById(R.id.bDictate).setOnClickListener(this);
+        findViewById(R.id.bFindOut).setOnClickListener(this);
 
         initSpeech();
     }
@@ -40,6 +45,9 @@ public class SpeechGame extends AppCompatActivity implements View.OnClickListene
                 break;
             case R.id.bDictate:
                 dictatePressed();
+                break;
+            case R.id.bFindOut:
+                speakPressed();
                 break;
         }
     }
@@ -79,16 +87,24 @@ public class SpeechGame extends AppCompatActivity implements View.OnClickListene
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
+        Map<String, String> questionsAndAnswers;
         if (requestCode == 200) {
             if (resultCode == RESULT_OK && data != null) {
                 ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                 String sResult = result.get(0);
                 tvSpeech.setText(sResult);
 
+                questionsAndAnswers = new HashMap<String, String>();
+                questionsAndAnswers.put("how old are you","15");
+                questionsAndAnswers.put("which brand is your laptop from","asus");
 
+                if (questionsAndAnswers.containsKey(sResult.toLowerCase())) {
+                    yesOrNo.setText(questionsAndAnswers.get(sResult.toLowerCase()));
+                } else {
+                    yesOrNo.setText("I can't answer you.");
+                }
+            }
 
         }
-
     }
 }
