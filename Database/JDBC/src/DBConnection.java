@@ -31,7 +31,7 @@ public class DBConnection {
 
             if (this.DATABASE_PASSWORD.isEmpty() || this.DATABASE_PASSWORD == null) {
                 this.DATABASE_PASSWORD = "";
-
+                
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -76,7 +76,7 @@ public class DBConnection {
             Statement st = conn.createStatement();
             st.executeUpdate(sql);
             st.close();
-            
+
         } catch (Exception e) {
             e.printStackTrace();
         }
