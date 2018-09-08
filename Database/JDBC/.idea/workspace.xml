@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be9df5f-3d96-4570-83d5-3503505f1ca7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../MobileApps/in_class_work/geekycampapp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MobileApps/geekycampenviromentsetuptest" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
