@@ -1,4 +1,0 @@
-#Sat Sep 08 22:19:43 EEST 2018
-base.0=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\geekycampapp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\66
-path.0=classes.dex
-renamed.0=classes.dex
