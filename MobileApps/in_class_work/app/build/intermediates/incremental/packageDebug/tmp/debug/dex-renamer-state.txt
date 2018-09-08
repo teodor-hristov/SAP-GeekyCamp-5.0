@@ -1,4 +1,4 @@
-#Sat Sep 08 22:19:43 EEST 2018
+#Sun Sep 09 00:52:01 EEST 2018
 path.1=classes.dex
 path.0=classes.dex
 renamed.5=classes6.dex
@@ -7,12 +7,12 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\geekycampapp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\73
-base.4=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\geekycampapp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\70
-base.3=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\geekycampapp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\72
-base.2=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\geekycampapp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\69
-base.1=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\geekycampapp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\71
-base.0=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\geekycampapp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\68
+base.5=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\in_class_work\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+base.4=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\in_class_work\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+base.3=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\in_class_work\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+base.2=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\in_class_work\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.1=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\in_class_work\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+base.0=C\:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\in_class_work\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex

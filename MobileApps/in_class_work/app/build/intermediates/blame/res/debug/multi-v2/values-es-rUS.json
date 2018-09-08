@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\in_class_work\\geekycampapp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rUS\\values-es-rUS.xml",
+            "outputFile": "C:\\Users\\tedot\\SAP GeekyCamp\\MobileApps\\in_class_work\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rUS\\values-es-rUS.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tedot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\763a87540da90d52e31364a3764eda69\\res\\values-es-rUS\\values-es-rUS.xml",
