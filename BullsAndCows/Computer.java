@@ -1,10 +1,10 @@
 public class Computer {
-    private String number;
+    public String number;
     private String computerName;
 
     Computer(String computerName) {
         this.computerName = computerName;
-        this.number = this.getComputerName();
+        this.number = this.generateNumber();
     }
 
     public String getNumber() {
@@ -15,7 +15,7 @@ public class Computer {
         return this.computerName;
     }
 
-    private void generateNumber() {
+    private String generateNumber() {
         StringBuilder sb = new StringBuilder();
 
         for(int i = 0; i < 4; ++i) {
@@ -27,6 +27,6 @@ public class Computer {
             }
         }
 
-        this.number = sb.toString();
+        return sb.toString();
     }
 }

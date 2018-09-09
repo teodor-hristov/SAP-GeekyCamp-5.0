@@ -7,39 +7,37 @@ public class Game {
     private int cows = 0;
 
     Game(Player player, Computer computer) {
-        this.player = new Player(player.getNumber(), player.getPlayerName());
-        this.computer = new Computer(computer.getComputerName());
+        this.player = player;
+        this.computer = computer;
         this.playerNumber = this.player.getNumber();
         this.computerNumber = this.computer.getNumber();
     }
 
-    private int getBulls() {
-        for(int i = 0; i < 4; ++i) {
-            if (this.playerNumber.charAt(i) == this.computerNumber.charAt(i)) {
-                ++this.bulls;
+    private void getCowsAndBulls() {
+        this.bulls = 0;
+        this.cows = 0;
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                if (this.computerNumber.charAt(i) == this.playerNumber.charAt(j) && i != j) {
+                    this.cows++;
+                }
+                if (this.computerNumber.charAt(i) == this.playerNumber.charAt(j) && i == j) {
+                    this.bulls++;
+                }
+
             }
         }
-
-        return this.bulls;
     }
 
-    private int getCows() {
-        for(int i = 0; i < 4; ++i) {
-            if (this.playerNumber.charAt(i) != this.computerNumber.charAt(i)) {
-                ++this.cows;
-            }
-        }
-
-        return this.cows;
-    }
 
     public String getStatus() {
+        getCowsAndBulls();
         String str;
-        if (this.getBulls() == 4) {
+        if (this.bulls == 4) {
             str = "Печелиш";
             return str;
         } else {
-            str = "Bulls: " + this.getBulls() + " Cows: " + this.getCows() + " ";
+            str = "Bulls: " + this.bulls + " Cows: " + this.cows + " ";
             return str;
         }
     }
