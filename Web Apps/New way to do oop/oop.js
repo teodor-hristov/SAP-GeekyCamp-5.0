@@ -1,16 +1,16 @@
-class Animal{
-    constructor(name){
+class Animal {
+    constructor(name) {
         this.name = name;
     }
-    speak(){
-        console.log('Animal::speaks:',this.name);
+    speak() {
+        console.log('Animal::speaks:', this.name);
     }
 }
-class Dog extends Animal{
-    constructor(name){
+class Dog extends Animal {
+    constructor(name) {
         super(name);
     }
-    speak(){
+    speak() {
         console.log('Dog::speaks:', this.name)
     }
 }

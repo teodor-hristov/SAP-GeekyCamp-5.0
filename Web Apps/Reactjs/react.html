@@ -1,16 +1,51 @@
-
 <html>
-        <head>
-            <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js" charset="utf-8"></script>
-            <script src="https://unpkg.com/react@16.5.0/umd/react.production.min.js"></script>
-            <script src="https://unpkg.com/react-dom@16.5.0/umd/react-dom.production.min.js"></script>
-            <script src="https://unpkg.com/react-router-dom@4.3.1/umd/react-router-dom.js"></script>
-        </head>
-        <body>
-            <div id="content"></div>
-        </body>
-        <script type="text/babel">
-            ReactDOM.render(<h2>Hello React World</h2>,
-                document.getElementById("content"));
+
+<head>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/react@16.5.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.5.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@4.3.1/umd/react-router-dom.js"></script>
+</head>
+
+<body>
+    <div id="content"></div>
+</body>
+<script type="text/babel">
+        class Table extends React.Component {
+            constructor(){
+                super()
+                this.state = {
+                    rows: [
+                        {id:1,firstName: 'Ivan',lastName: 'Ivanov'},
+                        {id:2,firstName: 'Teodor',lastName: 'Hristov'}
+                    ]
+                }
+            }
+        
+            render(){
+                return (<table>
+                    {this.state.row.map(element =>{
+                        return (
+                        <tr>
+                            <td>
+                                {element.id}
+                            </td>
+                            <td>
+                                {element.firstName}
+                            </td>
+                            <td>
+                                {element.lastName}
+                            </td>
+                        </tr>)
+                    })
+                }
+                    </table>)
+            }
+        }
+        
         </script>
-    </html>
+<script type="text/babel">
+            ReactDOM.render(<Table />, document.getElementById("content"));
+        </script>
+
+</html>

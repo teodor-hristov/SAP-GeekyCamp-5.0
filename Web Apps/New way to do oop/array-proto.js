@@ -1,6 +1,6 @@
-var arr = ['1','2','3'];
+var arr = ['1', '2', '3'];
 
-var newArr = arr.map((index,element) => {
+var newArr = arr.map((index, element) => {
     return index + '-->' + element;
 });
 
