@@ -6,6 +6,7 @@
     <Button
         android:id="@+id/bSpeechGame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="62dp"
         android:text="Speech Game" />
+
 </LinearLayout>
